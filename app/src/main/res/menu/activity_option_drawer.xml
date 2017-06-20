@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Trening" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Historia" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Statystyki" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Trasy" />
+        <item
+            android:id="@+id/nav_option"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ustawienia" />
+    </group>
+
+    <item android:title="Komunikacja">
+        <menu>
+            <item
+                android:id="@+id/nav_sendf"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_sendi"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Instagram" />
+            <item
+                android:id="@+id/nav_sends"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Snapchat" />
+        </menu>
+    </item>
+    <item android:title="Koniec pracy">
+        <menu>
+            <item
+                android:id="@+id/nav_end"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Wyjście"
+                android:onClick="clicked"/>
+        </menu>
+    </item>
+</menu>
