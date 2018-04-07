@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:onClick="hist"
+            android:title="Historia aktywności" />
+      <!--  <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:onClick="stat"
+            android:title="Statystyki" />-->
+        <item
+            android:id="@+id/nav_manage"
+            android:title="Wybierz trase"
+            android:onClick="wybor"/>
+        <item
+            android:id="@+id/nav_map"
+            android:onClick="loading"
+            android:title="Wczytaj mape"/>
+        <item
+            android:id="@+id/delete_map"
+            android:onClick="delete"
+            android:title="Usun Mape"/>
+    </group>
+
+    <item android:title="Komunikacja">
+        <menu>
+            <item
+                android:id="@+id/nav_sendf"
+                android:onClick="facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/nav_sendi"
+                android:onClick="instagram"
+                android:title="Instagram" />
+            <item
+                android:id="@+id/nav_sends"
+                android:onClick="twitter"
+                android:title="Twitter" />
+        </menu>
+    </item>
+    <item android:title="Koniec pracy">
+        <menu>
+            <item
+                android:id="@+id/nav_end"
+                android:title="Wyloguj"
+                android:onClick="clicked"/>
+        </menu>
+    </item>
+
+</menu>

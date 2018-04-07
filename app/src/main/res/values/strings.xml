@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">eSport</string>
-    <string name="title_activity_option">eSport</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="intro_text">Long click to exit the map.</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_e_sport_map">Map</string>
+
+    <string name="action_get_menu">Menu</string>
+    <string name="action_advanced_map">Mapa-Zaawansowana</string>
+    <string name="action_basic_map">Mapa-Podstawowa</string>
+    <string name="action_save">Zapisz mape</string>
+    <string name="action_clear">Wyczysc</string>
+
+    <string name="title_activity">eSport</string>
+    <string name="title_activity_history_of_day">Historia aktywności</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_statistic">Statystyki</string>
+    <string name="title_activity_history_activity">history_activity</string>
 </resources>

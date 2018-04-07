@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.androidplot.xy.XYPlot
+                style="@style/APDefacto.Light"
+                android:id="@+id/plot"
+                android:layout_width="340dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                ap:title="Dystans"
+                ap:rangeTitle="Km"
+                ap:domainTitle="Dni"
+                ap:lineLabels="left|bottom"
+                ap:lineLabelRotationBottom="-45"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.androidplot.xy.XYPlot
+            style="@style/APDefacto.Light"
+            android:id="@+id/plot2"
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            ap:title="Prędkość"
+            ap:rangeTitle="km/h"
+            ap:domainTitle="Dzień"
+            ap:lineLabels="left|bottom"
+            ap:lineLabelRotationBottom="-45"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.androidplot.xy.XYPlot
+                style="@style/APDefacto.Light"
+                android:id="@+id/plot3"
+                android:layout_width="340dp"
+                android:layout_height="170dp"
+                ap:title="Liczba spakonych kalorii"
+                ap:rangeTitle="kcal"
+                ap:domainTitle="Dzien"
+                ap:lineLabels="left|bottom"
+                ap:lineLabelRotationBottom="-45"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.androidplot.xy.XYPlot
+                style="@style/APDefacto.Light"
+                android:id="@+id/plot4"
+                android:layout_width="340dp"
+                android:layout_height="170dp"
+                ap:title="Liczba kroków"
+                ap:rangeTitle="L. kroków"
+                ap:domainTitle="Dzień"
+                ap:lineLabels="left|bottom"
+                ap:lineLabelRotationBottom="-45"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

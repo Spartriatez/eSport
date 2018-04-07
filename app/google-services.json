@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "420561315617",
+    "firebase_url": "https://alien-cedar-173700.firebaseio.com",
+    "project_id": "alien-cedar-173700",
+    "storage_bucket": "alien-cedar-173700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420561315617:android:41fe25814a9edfe0",
+        "android_client_info": {
+          "package_name": "com.example.ptr.esport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420561315617-rieblh5ffp8j0it9e2voe9u4k2rqithv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw4QTzzICHogeUd_1QfIT13f_OOzVQbsY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

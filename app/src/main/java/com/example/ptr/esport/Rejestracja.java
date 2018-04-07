@@ -1,43 +1,30 @@
 package com.example.ptr.esport;
-import java.util.ArrayList;
-import java.util.List;
-import android.content.ContentResolver;
+
 import android.content.Intent;
-import android.database.CharArrayBuffer;
-import android.database.ContentObserver;
-import android.database.DataSetObserver;
-import android.net.Uri;
+import android.database.Cursor;
+import android.database.SQLException;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.database.Cursor;
-import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class Rejestracja extends AppCompatActivity {
-    TextView tx;
     DBSqlite dbsql;
 
     EditText et1,et2,et3,et4,et5y,et5m,et5d,et6;
     String plec;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rejestracja);
-
-            dbsql=new DBSqlite(this);
+        dbsql=new DBSqlite(this);
     }
-
     public void click2(View view) throws SQLException {
         Cursor res = dbsql.getAllData();
-       if(res.getCount()==0) {
+        if(res.getCount()==0) {
             showMessage("Error","Nic nie ma");
             return;
         }
@@ -53,7 +40,7 @@ public class Rejestracja extends AppCompatActivity {
             buffer.append("data ur : "+res.getString(5)+"\n");
             buffer.append("plec : "+res.getString(6)+"\n");
         }
-       showMessage("Dane",buffer.toString());
+        showMessage("Dane",buffer.toString());
     }
     public void showMessage(String title,String message)
     {
@@ -65,7 +52,6 @@ public class Rejestracja extends AppCompatActivity {
     }
     public void click3(View view) {
 
-        tx = (TextView) findViewById(R.id.texp);
         et1 = (EditText) findViewById(R.id.Text1);
         et2 = (EditText) findViewById(R.id.Text2);
         et3 = (EditText) findViewById(R.id.Text3);
@@ -79,23 +65,22 @@ public class Rejestracja extends AppCompatActivity {
         String result=dbsql.showUsers(et1.getText().toString());
 
         if (et1.getText().toString().equals("") || et2.getText().toString().equals("") || et3.getText().toString().equals("") || et4.getText().toString().equals("") || et5y.getText().toString().equals("")||et5m.getText().toString().equals("") ||et5d.getText().toString().equals("")|| et6.getText().toString().equals(""))
-            tx.setText("Wypełnij poprawnie wszystkie dane");
+            Toast.makeText(Rejestracja.this, "Wypełnij poprawnie wszystkie dane", Toast.LENGTH_SHORT).show();
         else if(result!=null)
-            tx.setText("Username już istnieje");
+            Toast.makeText(Rejestracja.this, "Username już istnieje", Toast.LENGTH_SHORT).show();
         else if ((!views1.isChecked() && !views2.isChecked()) || (views1.isChecked() && views2.isChecked()))
-            tx.setText("wybierz poprawna jedna z opcji");
+            Toast.makeText(Rejestracja.this, "wybierz poprawna jedna z opcji", Toast.LENGTH_SHORT).show();
         else if (!et2.getText().toString().equals(et3.getText().toString()))
-            tx.setText("niepoprawne haslo");
+            Toast.makeText(Rejestracja.this, "niepoprawne haslo", Toast.LENGTH_SHORT).show();
         else if(et5y.getText().length()>4 || et5m.getText().length()>2||et5d.getText().length()>2)
-            tx.setText("niepoprawny format daty");
+            Toast.makeText(Rejestracja.this, "niepoprawny format daty", Toast.LENGTH_SHORT).show();
         else {
             if (views1.isChecked())
                 plec = "Kobieta";
             else
                 plec = "Mezczyzna";
-            tx.setText("dane zostaly poprawnie wypelnione");
             String et5all=et5y.getText().toString()+"-"+et5m.getText().toString()+"-"+et5d.getText().toString();
-          boolean isInserted=dbsql.insertDataUsers(et1.getText().toString(),et2.getText().toString(),et6.getText().toString(),et4.getText().toString(),et5all,plec);
+            boolean isInserted=dbsql.insertDataUsers(et1.getText().toString(),et2.getText().toString(),et6.getText().toString(),et4.getText().toString(),et5all,plec);
             if(isInserted==true)
                 Toast.makeText(Rejestracja.this, "Dodano dane", Toast.LENGTH_SHORT).show();
             else
@@ -103,8 +88,7 @@ public class Rejestracja extends AppCompatActivity {
         }
     }
     public void click4(View view) {
-        Intent inten=new Intent(Rejestracja.this,eSport.class);
+        Intent inten=new Intent(Rejestracja.this,Login.class);
         startActivity(inten);
     }
-
 }

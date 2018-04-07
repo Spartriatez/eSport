@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_get_menu"
+        android:onClick="click11"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_basic_map"
+        android:orderInCategory="100"
+        android:title="@string/action_basic_map"
+        android:onClick="click22"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save2"
+        android:orderInCategory="100"
+        android:title="@string/action_save"
+        android:onClick="save"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear"
+        android:orderInCategory="100"
+        android:onClick="click44"
+        android:title="@string/action_clear"
+        app:showAsAction="never" />
+</menu>

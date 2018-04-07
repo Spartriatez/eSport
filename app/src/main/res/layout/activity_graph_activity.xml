@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ptr.esport.Graph_activity">
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.androidplot.xy.XYPlot
+                    style="@style/APDefacto.Light"
+                    android:id="@+id/plot5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center_horizontal"
+                    ap:title="Profil wysokości"
+                    ap:rangeTitle="NPM"
+                    ap:domainTitle="m"
+                    ap:lineLabels="left|bottom"
+                    ap:lineLabelRotationBottom="-45" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.androidplot.xy.XYPlot
+                    style="@style/APDefacto.Light"
+                    android:id="@+id/plot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    ap:title="Prędkość"
+                    ap:rangeTitle="km/h"
+                    ap:domainTitle="s"
+                    ap:lineLabels="left|bottom"
+                    ap:lineLabelRotationBottom="-45"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.androidplot.xy.XYPlot
+                    style="@style/APDefacto.Light"
+                    android:id="@+id/plot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    ap:title="Liczba spakonych kalorii"
+                    ap:rangeTitle="kcal"
+                    ap:domainTitle="s"
+                    ap:lineLabels="left|bottom"
+                    ap:lineLabelRotationBottom="-45"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.androidplot.xy.XYPlot
+                    style="@style/APDefacto.Light"
+                    android:id="@+id/plot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    ap:title="Dystans"
+                    ap:rangeTitle="m"
+                    ap:domainTitle="s"
+                    ap:lineLabels="left|bottom"
+                    ap:lineLabelRotationBottom="-45"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="getHistory"
+                android:text="Powrót do historii" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Menu"
+        android:onClick="getMenu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/map"
+        android:orderInCategory="100"
+        android:title="Mapa"
+        android:onClick="getMap"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/graph"
+        android:orderInCategory="100"
+        android:title="Wykresy"
+        android:onClick="getGraph"
+        app:showAsAction="never" />
+</menu>

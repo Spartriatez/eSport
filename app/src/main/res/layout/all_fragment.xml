@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Data"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_gravity="left"/>
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zaladuj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Załaduj dane" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sum przebytych km"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max dystans"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Srednia Predkosc (km/h)"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/textView104"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minimalna Prędkość"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView106"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Srednia spalonych kalorii (kcal)"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView108"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min l. spalonych kalorii (kcal)"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView110"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Max l. kroków"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Średni dystans"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min dystans"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView103"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maksymalna Prędkość"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView105"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suma spalonych kalorii (kcal)"
+                        android:layout_gravity="center"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView107"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="24dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Max l. spalonych kalorii "
+                            android:layout_gravity="center"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView109"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="24dp"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Srednia l. kroków "
+                            android:layout_gravity="center"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="24dp"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Min. l. kroków"
+                            android:layout_gravity="center"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView113"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textSize="24dp"
+                            android:textAlignment="center"
+                            />
+
+                    <Button
+                        android:id="@+id/Clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Clear" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
